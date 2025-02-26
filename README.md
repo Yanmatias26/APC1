@@ -47,4 +47,4 @@ gcc nome_do_arquivo.c -lm
 ```shell
 ./a.exe
 ```
-APC1
+git add README.md
