@@ -11,6 +11,13 @@ int main(){
     printf("pressione outra tecla e depois ENTER:\n");
     scanf("%c",&tecla); //tecla = 'a';
     printf("Voce pressionou a '%c'\n", tecla);
+    getchar();
+
+    
+    char nome [31];
+    printf("entre com seu nome:");
+    scanf("%[^\n]s", nome);
+    printf("voce digitou %s\n", nome);
 
     return 0;
 }
