@@ -1,14 +1,32 @@
 #include <stdio.h>
 
-int main(){
-    int matriz[10][10];
-    
+int main()
+{
+    int numeros[10];
 
-    for(int i=0;i<10;i++){
-        for(int j=0;j<10;j++){
-        printf("digite um numero: ");
-        scanf("%i", &matriz[i][j])
+    for (int i = 0; i < 10; i++)
+    {
+        printf("Digite um numero entre 0 e 9:\n");
+        scanf("%i", &numeros[i]);
+    }
+    int numero;
+    printf("Digite um numero:\n");
+    scanf("%i", &numero);
+    int achou = -1;
+    for (int i = 0; i < 10; i++)
+    {
+        if (numeros[i] == numero)
+        {
+            achou = i;
         }
+    }
+    if (achou < 0)
+    {
+        printf("O numero nao foi encontrado\n");
+    }
+    else
+    {
+        printf("O numero foi encontrado na posicao %i", achou);
     }
 
     return 0;
